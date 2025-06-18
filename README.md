@@ -1,5 +1,5 @@
-[![GitHub stars](https://img.shields.io/github/stars/BabaSanfour/MFRS)](https://github.com/BabaSanfour/MFRS/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/BabaSanfour/MFRS)](https://github.com/BabaSanfour/MFRS/network)
+[![GitHub stars](https://img.shields.io/github/stars/BabaSanfour/CNN-MEG-FaceProcessing)](https://github.com/BabaSanfour/MFRS/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/BabaSanfour/CNN-MEG-FaceProcessing)](https://github.com/BabaSanfour/MFRS/network)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Project Overview
