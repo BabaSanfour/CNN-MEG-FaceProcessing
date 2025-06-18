@@ -1,4 +1,5 @@
 import argparse
+from typing import Union
 
 def get_training_config_parser():
     """
@@ -214,7 +215,7 @@ def get_similarity_parser():
         '--activation_type', 
         type=str, 
         choices= [
-            "trained", "untrained", "imagenet"
+            "trained", "untrained", "imagenet", "VGGFace"
         ],
         default= "trained",
         help='Activations type: trained, untrained'
@@ -286,13 +287,23 @@ def get_similarity_parser():
     )
     brain.add_argument(
         '--freq_band',
-        type=str,
+        type=Union[str, bool],
         default=None,
         help='Frequency band for source reconstruction'
     )
+    brain.add_argument(
+        "--subject_rdms_folder",
+        type=str,
+        default=None,
+        help="Path to the RDM folder."
+    )
+    parser.add_argument(
+        "--raw_mode",
+        choices=["each", "avg"],
+        default="each",
+        help="In raw mode: 'each' for per‐subject scores, 'avg' to average across subjects first"
+    )
 
-
-    
     stats = parser.add_argument_group("Stats")
     stats.add_argument(
         '--similarity_measure', 
